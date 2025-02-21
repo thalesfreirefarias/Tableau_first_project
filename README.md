@@ -9,57 +9,25 @@ Tips for Tableau
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-First project:
-```
-import pandas as pd
-df_techtaste = pd.DataFrame({'avaliacoes': [38, 44, 33, 42, 47, 33, 36, 39, 42, 36, 39, 34, 42, 42, 36, 43, 31, 35, 36, 41, 42, 30, 25, 38, 47, 36, 32, 45, 44, 45, 37, 48, 37, 36, 44, 49, 31, 45, 45, 40, 36, 50, 38, 34, 36, 42, 46, 49, 36, 34, 38, 31, 53, 40, 57, 40, 36, 42, 26, 50, 32, 43, 35, 37, 42, 30, 36, 43, 40, 43, 44, 52, 37, 51, 35, 47, 40, 50, 37, 49]})
-```
+### To use Tableau you need to pay a fee depends on the periodo you will use it but have a option to train your tableau's skills for free:
+https://public.tableau.com/
+With a simple register you will install the free version then use almost all of tableau tools.
+(Don't forget the save all the steps there)
 
-1 Step: Calculate standard_deviation( SD) and Standard Error of the Mean (SEM)
-```
-standard_deviation = df_techtaste['avaliacoes'].std()
-print(f'Standard deviation : {standard_deviation:.2f}')
-
-from scipy import stats
-
-erro_padrao = stats.sem(df_techtaste['avaliacoes'])
-print(f'Erro padrão: {erro_padrao:.2f}')
-```
-2 Step: Show the results in grafics
-
-```
-import matplotlib.pyplot as plt
-# Histogram chart
-plt.hist(df_techtaste['avaliacoes'], bins=15, color='skyblue', edgecolor='black')
-plt.title('Distribuição das Avaliações TechTaste')
-plt.xlabel('Avaliações')
-plt.ylabel('Frequência')
-plt.show()
-```
-
-3 Step: Using range where you are 90% confident.
-```
-confident = 0.90
-confident_range = stats.norm.interval(confident,
-                                       loc=df_techtaste['avaliacoes'].mean() ,
-                                       scale=erro_padrao)
-
-print(f'Confident range ({condifent*100}%): {confident_range')
-```
+###What is Tableau?
+Founded in 2003 as a result of a computer science project at Stanford University, Tableau is a visual analytics platform used in the field of Business Intelligence. With this tool, you can capture raw data and transform it into straightforward analysis, making it easier to understand.
 
 
-> Studying with Alura and devolop some solutions with Phyton.
 
 ### Adjustments and improvements.
 
 The project is still under development, and the upcoming updates will focus on the following tasks:
 
-- [x] Advanced courses about Phyton
+- [x] Advanced courses about Tableau
 
 The following tools were used in the construction of the project:
 
-- [Google colab](<https://posit.cloud/](https://colab.research.google.com/>)
-- [Python](<https://www.python.org/>)
+- [Tableau Public ](<https://public.tableau.com/app/discover/>)
 
 
 
