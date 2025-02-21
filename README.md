@@ -17,6 +17,17 @@ With a simple register you will install the free version then use almost all of 
 ###What is Tableau?
 Founded in 2003 as a result of a computer science project at Stanford University, Tableau is a visual analytics platform used in the field of Business Intelligence. With this tool, you can capture raw data and transform it into straightforward analysis, making it easier to understand.
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="#" title="Thales Farias">
+        <img src="Captura de Tela 2025-02-20 às 20.16.05.png" width="500" alt="Tableau's Dashboard"/><br>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 
 
 ### Adjustments and improvements.
